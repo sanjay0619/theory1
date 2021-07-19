@@ -85,6 +85,12 @@ header {
     h3 {
         width: 50%;
     }
+    .toggle {
+        display: none;
+        border: none;
+        background: none;
+        font-size: 1.6rem;
+    }
     ul {
         width: 50%;
         display: flex;
@@ -98,16 +104,6 @@ header {
             }
         }
     }
-}
-
-
-/*toggle*/
-
-.toggle {
-    display: none;
-    border: none;
-    background: none;
-    font-size: 1.6rem;
 }
 
 
@@ -355,6 +351,17 @@ footer {
 
 @media (max-width:600px) {
     header {
+        .toggle {
+            display: block;
+            color: white;
+            background: none;
+            border: none;
+        }
+        .toggle:hover {
+            font-size: 2rem;
+            background: none;
+            border: none;
+        }
         ul {
             width: 100%;
             display: none;
@@ -369,18 +376,6 @@ footer {
                 }
             }
         }
-    }
-    /*toggle*/
-    .toggle {
-        display: block;
-        color: white;
-        background: none;
-        border: none;
-    }
-    .toggle:hover {
-        font-size: 2rem;
-        background: none;
-        border: none;
     }
     /*banner*/
     .banner {
